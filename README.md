@@ -64,3 +64,8 @@ there are two types of layout
         - Modern way of laying out elements in a 1 dimensional row without using floats. perfect of component layouts
     - Css grid
         - For laying out element in a fully-fledged 2-dimensional grid. perfect for page layouts and complex components
+
+Float
+    - Elemennt is removed from the normal flow
+    - Text and inline elements will wrap around the floated element
+    - the container will not adjust its height to the element
