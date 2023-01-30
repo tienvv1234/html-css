@@ -27,7 +27,7 @@ body {
   padding-left: 40px;
   padding-right: 40px; */
   padding: 20px 40px;
-  /* margin-bottom: 60px; */
+  margin-bottom: 60px;
   /* height: 80px; */
 }
 
@@ -389,6 +389,7 @@ aside {
 }
 
 article {
+  background-color: green;
 }
 
 aside {
