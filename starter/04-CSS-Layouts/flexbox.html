@@ -40,6 +40,40 @@
         margin: 40px;
 
         /* FLEXBOX */
+        display: flex;
+        align-items: center; /* vertical */
+        justify-content: flex-start; /* horizontal */
+        /* justify-content: space-between; */
+
+        /* gap: 30px; space between elements */
+      }
+
+      .el {
+        /* 
+        defaults:
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto; auto fit the container
+        */
+
+        /* flex-basis: 200px; width */
+        flex-shrink: 0; /* don't shrink */
+        /* flex-grow: 1; grow to fill the space */
+        flex: 1; /* shorthand for flex-grow, flex-shrink, flex-basis */
+      }
+
+      .el--1 {
+        align-self: flex-start;
+        /* flex-grow: 1; only this element fill the space */
+      }
+
+      .el--4 {
+        align-self: stretch;
+        order: 1;
+      }
+
+      .el--6 {
+        order: -1;
       }
     </style>
   </head>
@@ -51,8 +85,8 @@
       <div class="el el--4">are</div>
       <div class="el el--5">amazing</div>
       <div class="el el--6">languages</div>
-      <div class="el el--7">to</div>
-      <div class="el el--8">learn</div>
+      <!-- <div class="el el--7">to</div>
+      <div class="el el--8">learn</div> -->
     </div>
   </body>
 </html>
