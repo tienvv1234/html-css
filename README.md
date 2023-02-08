@@ -79,3 +79,11 @@ Flex box
 ![1-demensional](1-demensional.png "Text to show on mouseover").
 ![Flexbox-terminology](Flexbox-terminolocy.png)
 ![Flexbox-cheatsheet](cheatsheet-flexbox.png)
+
+### CSS GRID
+- CSS Grid is a set of CSS properties for building 2-demensional layouts
+- The main idea behind CSS Grib is that we divide a container element into rows and columns that can be filled with its child elements
+- In two-demensional contexts, CSS Grod allows us to write less nested HTML and easier to read CSS
+- CSS grid is not meant to replace flexbox! instead, they work perfectly together. Need a 1D layout? use flexbox, Need a 2d layout? Use css grid
+![css-grid](css%20grid.png)
+![css-grid-cheatsheet](cheatsheet-cssgrid.png)
