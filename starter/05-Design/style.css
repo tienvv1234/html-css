@@ -5,7 +5,7 @@ SPACING SYSTEM (px)
 FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
-
+/* type-scale.com */
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +16,7 @@ FONT SIZE SYSTEM (px)
 /* GENERAL STYLES */
 /* ------------------------ */
 body {
+  /* always using '' these quote, and the comma is priority Inter <- sans-serif */
   font-family: 'Inter', sans-serif;
 }
 
@@ -60,6 +61,7 @@ header {
 h1 {
   margin-bottom: 24px;
   font-size: 44px;
+  /* 44, 52, 62 */
   line-height: 1.1;
   letter-spacing: -1px;
 }
@@ -85,7 +87,7 @@ img {
 
 .features-text {
   font-size: 18px;
-  line-height: 17;
+  line-height: 1.7;
 }
 
 /* TESTIMONIAL */
@@ -141,8 +143,10 @@ h3 {
 .chair-price {
   display: flex;
   justify-content: space-between;
+  font-size: 20px;
 }
 
 footer {
   margin-bottom: 48px;
+  font-size: 14px;
 }

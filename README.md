@@ -87,3 +87,56 @@ Flex box
 - CSS grid is not meant to replace flexbox! instead, they work perfectly together. Need a 1D layout? use flexbox, Need a 2d layout? Use css grid
 ![css-grid](css%20grid.png)
 ![css-grid-cheatsheet](cheatsheet-cssgrid.png)
+
+## Web Design Rules
+### Some concepts first
+### Typography
+- Typography is the art and technique of arranging type to make written languege legible, readable and appealing when displayed (Đánh chữ là nghệ thuật và kỹ thuật sắp xếp các ký tự để khi hiển thị, văn bản trở nên dễ đọc, trực quan và thu hút mắt.)
+
+- serif vs sans-serif
+    - serif creates a traditional/classic look and feel (Tạo ra vẻ đẹp truyền thống/cổ điển)
+    - conveys trustworthiness (Truyền tải được sự đáng tin cậy)
+    - good for long text
+
+    - Sans-serif modern look and feed
+    - Clean and simple
+    - Easier to choose for beginner designer
+
+1. Use only good and popular typefaces and play it safe
+6 font size very popular (Sans-serif)
+inter, open sans, roboto, montserrat, work sans, lato
+6 font size very popular (serif)
+merriweather, aleo, Playfair Display, cormarant, cardo, lora
+
+2. It's okay to use just one typeface per page! If you want more, limit to 2 typeface
+
+3. Choose the right typeface according to your website personality:
+
+    - Choose the tight personality for your website (more on this later)
+    - Decide between a serif and sans-serif typeface
+    - Experiment with all the good typefaces (and other typesfaces from google fonts!) to see thich ones best fits your website's message (this will come with experience)
+    - You can keep trying different typefaces as you design and build the page
+
+4. Use good font sizes and weights
+When choosing font-sizes, limit choices! use a type scanle tool or other pre-defined ranger
+
+5. Use a font size between 16px and 32px for normal text
+
+6. For long text (like a blog post), try a size of 20px or even bigger
+
+7. For headlines, you can go really big (50px+) and bold (600px+), depending on personality
+
+8. For any text, don't use a font weight under 400(regular)
+
+9. Use less than 75 characters per line
+
+10. For normal-sized text, use a line height between 1.5 and 2. for big text, go below 1.5
+  - The smaller or longer the text, the larger the line height needs to be(Khi văn bản ngắn hoặc dài hơn, khoảng cách giữa các dòng (line height) cần phải lớn hơn.)
+
+11. Decrease letter spacing in headlines, if it looks unnatural(this will come from experience)
+
+12. Experiment with all caps for short titles, Make them small and bold and increase letter-spacing
+
+13. Usually, don't justify text
+
+14. Don't center long text blocks. small blocks are fine
