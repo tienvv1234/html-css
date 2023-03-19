@@ -140,3 +140,25 @@ When choosing font-sizes, limit choices! use a type scanle tool or other pre-def
 13. Usually, don't justify text
 
 14. Don't center long text blocks. small blocks are fine
+
+### Choose the right color
+1. Make the main color match your website's personality: colors convey meaning
+    - Red draws a lot of attention, and symbolizes power, passion, and excitement
+    - Orange is less aggressive, and conveys happiness, passion, and excitement
+    - Yellow means joy, brightness, and intelligence
+    - Greens represents harmony , nature, growth, and health
+    - 
+2. Use a good color tone! Don't choose a random tone or css named colors.(tools: open color, tailwindcss, flat ui colors 2)
+
+3. You need at least two types of colors in your color palette: amin color and a grey color
+![Main-blue-grey-dark-](main-grey-color.png)
+4. With more experience, you can add more colors: accent(secondary) colors (use a tool)
+5. For deversity, create lighter(tints) and darker(shades) 'version' (tints and shades)
+![Color-system](color-system.png)
+6. Use your main color to draw attention to the most important elements on the page
+7. Use colors to add interesting accents or make entire components or sections stand out
+8. You can try to use your color strategically in images and illustrations
+9. On dark colored backgrounds, try to use a tint of the background(lighter version) for text
+10. Text should usually not be completely black. Lighten if up it looks heavy and uninviting
+11. Don't make text too light! Use a tool to check contrast between text and background color(use some tools like a coolors)
+    - Contrast ratio needs to be at least 4.5:1 for normal text and 3:1 for large text (18px+)
