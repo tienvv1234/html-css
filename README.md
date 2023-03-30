@@ -162,3 +162,47 @@ When choosing font-sizes, limit choices! use a type scanle tool or other pre-def
 10. Text should usually not be completely black. Lighten if up it looks heavy and uninviting
 11. Don't make text too light! Use a tool to check contrast between text and background color(use some tools like a coolors)
     - Contrast ratio needs to be at least 4.5:1 for normal text and 3:1 for large text (18px+)
+
+### Images and illustrations
+1. Differenct types of images: Product photos, storytelling, illustrations, patterns
+2. Use images to support your website's message and story. So only use relevant images!
+3. Prefer original images. if not possible, use original-looking stock images(not generic ones)
+4. try to show real people to trigger user's emotions
+5. if necessary, crop images to fit your message
+6. experiment combining photos, illustrations and patterns
+#### handing text on images
+1. Darker or brighten image(completely or partially, using gradient)
+2. Position text into neutral image area
+3. Put text on box
+4. To account for high-res screens, make image dimensions 2x as big as their displayed size
+    Scale factor: Actual pixels the screen contains/ Pixels represented on screen
+    On high-res screens, scale factor is 2x or even 3x, on "normal" screens it's just 1x (1 physical pixel = 1 design pixel)
+5. Compress images for a lower file size and better performance
+![compress images](compress.png)
+6. When using multiple images side by side, make sure they have the exact same dimensions
+
+### Icons
+1. Use a good icon pack, there are tons of free and paid icons packs
+2. Use onle one icon pack. Don't mix icons from different icon packs
+3. Use SVG icons or icon fonts. Don't use bitmap image formats(jpg, png)
+4. Adjust to website personality! Roundness, weight and filled/outlined depend on typography
+5. Use icons to provide visual assistance to text
+6. Use icons for product feature blocks
+7. Use icons associated with actions, and label them (unless on space or icon is 100% clear)
+8. Use icons as bullet points
+9. To keep icons neutral, use same color as text. To draw more attention, use different color
+10. Dont confy your users: icons need to make sense and fit the text or action
+11. Don't make icons larger than what theu were designed for. if needed, enclose them in a shape
+
+### Shadows
+- After an era of 100% flat design, we're now back to using shadows in UI design (flat design 2.0)
+- Shadow creates depth (3d): the mỏe shadow, the further away from the interface the element is(shadow can be used on boxes and text)
+
+1. You don't have to use shadows! Only use them if  it makes sense for the website personality
+2. Use shadows in small doses: don't add shadows to every element
+3. Go light on shadows, don't make them too dark
+4. Use small shadows for smaller  elements that should stand out(to draw attention)
+5. Use medium-size shadows for larger areas that should stand out a bit  more
+6. Use large shadows for elements that should really float above the interface
+7. Experiment with changing shadows on mouse interaction (click and hover)
+8. Bonus: experiment with glows(colored shadows)
