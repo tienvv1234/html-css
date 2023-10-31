@@ -206,3 +206,15 @@ When choosing font-sizes, limit choices! use a type scanle tool or other pre-def
 6. Use large shadows for elements that should really float above the interface
 7. Experiment with changing shadows on mouse interaction (click and hover)
 8. Bonus: experiment with glows(colored shadows)
+
+### border radius 
+1. Use border-radius to increase the playfulness and fun of the design to make it less serious
+2. Typefaces have a certain roundness: make sure that border-radius matches that roundness!
+3. Use border-radius on buttons, images, around icons, standout sections and other elements
+
+### Whitespace
+1. Use tons of whitespace between sections
+2. Use a lot of whitespace between groups of elements
+3. Use whitespace between elements
+4. Inside groups of elements, try to use whitespace instead of lines
+5. The more some elements (or gourps of elements) belong together, the closer they should be! (the "law of proximity") 

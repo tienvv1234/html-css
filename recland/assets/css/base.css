@@ -1,0 +1,51 @@
+:root{
+    --primary: #021A84;
+    --secondary: #FE4C4C;
+    --text: #171717;
+    --geen-text: #2ADA66;
+    --purple-text: #021A84;
+    --red-text: #E5532A;
+    --gray: #999999;
+    --light-gray: #E5E5E5;
+    --green-gradient: linear-gradient(0deg, rgba(255, 255, 255, 0.60) 0%, rgba(255, 255, 255, 0.60) 100%), #2ADA66;
+    --purple-gradient: linear-gradient(0deg, rgba(255, 255, 255, 0.60) 0%, rgba(255, 255, 255, 0.60) 100%), #021A84;
+    --red-gradient: linear-gradient(0deg, rgba(255, 255, 255, 0.60) 0%, rgba(255, 255, 255, 0.60) 100%), #E5532A;
+}
+
+html, body {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+.wrapper {
+    max-width: 1160px;
+    width: 100%;
+    /* margin: 0 auto; */
+    margin-inline: auto;
+}
+
+/* Button style */
+.btn {
+    height: 44px;
+    min-width: 149px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    color: inherit;
+}
+
+.btn--border {
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    color: var(--primary);
+}
+
+.btn--solid {
+    border-radius: 8px;
+    background-color: var(--primary);
+    color: white;
+}
+/* End Button style */
