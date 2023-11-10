@@ -1,0 +1,28 @@
+mixin tourItem(price, title, review, reviewCount, duration, tourPrice)
+    .tour
+        .tour-top 
+            img.tour-image(src='https://images.unsplash.com/photo-1682685797208-c741d58c2eff?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', alt= 'bali')
+            span.tour-price= price
+        .tour-content 
+            h3.tour-title= title
+            .tour-rating 
+                .tour-review 
+                    .tour-star 
+                        img(src='./images/star.png' alt='star')
+                    .tour-review-count 
+                        span= review 
+                            | (#{reviewCount} reviews)
+                span.tour-duration Duration: #{duration}
+            a.tour-button(herf='https//evondev.com', target='_blank', ref='noopener') Tours Price $#{tourPrice} 
+
+mixin popularItem()
+    .popular-item
+        .popular-image
+            img.popular-img(src='https://images.unsplash.com/photo-1682685797208-c741d58c2eff?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', alt='bali')
+            span.popular-label Must see
+        .popular-content
+            time.popular-time Sep 28 19:10 PM - 21:00 PM
+            h3.popular-title The Grand Palace
+            .popular-review
+                img(src='./images/star.png' alt='star')
+                span 4.8 (12 reviews)

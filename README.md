@@ -218,3 +218,9 @@ When choosing font-sizes, limit choices! use a type scanle tool or other pre-def
 3. Use whitespace between elements
 4. Inside groups of elements, try to use whitespace instead of lines
 5. The more some elements (or gourps of elements) belong together, the closer they should be! (the "law of proximity") 
+
+### box-sizing
+1 content-box: width = width + padding(left + right) + border(left + right)
+2 border-box: width = width - padding(left + right) - border(left + right)
+should config in css reset
+
