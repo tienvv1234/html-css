@@ -1,31 +1,12 @@
-include ./pug/mixins-tour.pug
+extends ./views/layout/layout-tour.pug
+block vars  
+    - var title = 'Home Page'
+append head 
+    link(rel="stylesheet" href="./styles/main.css")
 
-doctype html
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Document
-        link(rel="preconnect" href="https://fonts.googleapis.com")
-        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
-        link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap")
-        link(href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&display=swap" rel="stylesheet")
-        //- link(rel="stylesheet" href="./styles/popular.css")
-        link(rel="stylesheet" href="./styles/main.css")
-    body
-        section.top-tours 
-            .container 
-                h2.heading Top Bangkok Tours 
-                .tour-list 
-                    +tourItem('From $40', 'Thailands Ayutthaya Temples Cruise from Bangkok', 4.8, 20, '9 hours', 55)
-                    +tourItem('From $40', 'Thailands Ayutthaya Temples Cruise from Bangkok', 4.8, 20, '9 hours', 55)
-                    +tourItem('From $40', 'Thailands Ayutthaya Temples Cruise from Bangkok', 4.8, 20, '9 hours', 55)
-        section.popular
-            .container
-                h2.heading Popular things to do in Bangkok
-                .popular-list
-                    +popularItem
-                    +popularItem
-                    +popularItem
-                    +popularItem
+block main
+    main
+        include ./views/home/TopTours
+        include ./views/home/Popular
+        include ./views/home/Gem
+        include ./views/home/Diamond

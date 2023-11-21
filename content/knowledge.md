@@ -723,3 +723,8 @@
 - @container feedItem (min-width: 501px) and style(--is-mobile: true) {}
   -> feedItem sẽ là tên container của nó và nó có sử dụng variable là --is-mobile:true
 - Khi sử dụng container query thì phần tử con dùng position: fixed không hoạt động, thay vào đó dùng thử position: sticky, nếu mà vẫn chưa được như ý muốn thì chuyển sang dùng media query cho chắc
+
+
+caniuse la 1 trang web giup chung ta kiem tra thuoc tinh trong css xem no co dc trinh ho tro hay khong
+
+semantic tags(html 5): header, footer, main, section, article, nav, aside
