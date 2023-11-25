@@ -1,0 +1,13 @@
+.grid {
+    &-layout {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 20px;
+    }
+
+    &-item {
+        aspect-ratio: 1/1;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        @include flex(center, center);
+    }
+} 

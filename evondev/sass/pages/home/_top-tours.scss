@@ -21,7 +21,7 @@
         flex-direction: row;
         align-items: stretch;
         flex-wrap: wrap;
-        gap: 30;
+        gap: 30px;
         
     }
 
@@ -55,7 +55,13 @@
         // background-color: red;
         // flex: 1;
         flex-grow: 1;
-        @include flex(flex-start, flex-start, 0, column);
+        @include flexOptimized((
+            ai: flex-start,
+            jc: flex-start,
+            fd: column,
+            gap: 0,
+        ));
+        // @include flex(flex-start, flex-start, 0, column);
         border-radius: 0 0 10px 10px;
     }
 
