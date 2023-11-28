@@ -515,6 +515,85 @@ a {
   flex-wrap: nowrap;
 }
 
+.my-name {
+  text-align: center;
+  position: relative;
+}
+.my-name:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.my-name span {
+  position: relative;
+  z-index: 2;
+  background-color: white;
+  padding: 5px;
+}
+
+.button-rounded {
+  width: 50px;
+  height: 50px;
+  border-radius: 100rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: orange;
+  position: relative;
+  cursor: pointer;
+}
+.button-rounded:before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  border-radius: inherit;
+  background-color: currentColor;
+  opacity: 0.1;
+}
+
+.bag-icon {
+  display: inline-block;
+  color: red;
+  position: relative;
+}
+.bag-icon:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 100rem;
+  border: 1px solid white;
+  background-color: currentColor;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+button.pointer {
+  cursor: not-allowed;
+}
+button.pointer span {
+  pointer-events: none;
+}
+
+p.column {
+  column-count: 3;
+  column-gap: 50px;
+  column-width: 200px;
+  column-rule: 5px dotted orange;
+}
+
+.boxed {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  box-shadow: 5px 5px 10px 20px red;
+}
+
 @media screen and (min-width: 768px) {
   .footer-column:first-child {
     max-width: 268px;
