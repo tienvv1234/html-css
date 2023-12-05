@@ -110,3 +110,332 @@ body {
 .rem-unit {
     background-color: #F62682;
 }
+
+body {
+    font-family: "DM Sans", sans-serif;
+    padding: 20px;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.radio,
+.checkbox {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #e6e8ec;
+    border-radius: 8px;
+    color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radio-label,
+.checkbox-label {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.radio-input,
+.toggle-input,
+.checkbox-input {
+    display: none;
+}
+
+.radio-input:checked ~ .radio,
+.checkbox-input:checked + .checkbox {
+    background-color: #2cccff;
+    border-color: #2cccff;
+    color: white;
+}
+
+.radio {
+    border-radius: 100rem;
+}
+
+.toggle-label {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.toggle {
+    width: 48px;
+    height: 24px;
+    background-color: #e7ecf3;
+    border-radius: 100rem;
+    padding: 4px 5px;
+    transition: all 0.25s linear;
+}
+.toggle-input:checked + .toggle {
+    background-color: #6A5AF9;
+}
+
+.toggle-spinner {
+    width: 16px;
+    height: 16px;
+    border-radius: 100rem;
+    background-color: white;
+    transition: all 0.25s linear;    
+}
+
+.toggle-input:checked + .toggle .toggle-spinner {
+    transform: translateX(22px);
+}
+
+.dropdown {
+    --radius: 10px;
+    --fake-spacing: 50px;
+    display: block;
+    width: 152px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.dropdown-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 12px;
+    border-radius: var(--radius);
+    color: white;
+    background-color: #353945;
+    font-style: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    height: 40px;
+}
+
+.dropdown-list {
+    background-color: white;
+    /* padding: 10px; */
+    /* box-shadow: 0px 30px 120px 0px #1E1E1E1A; */
+    border-radius: var(--radius); 
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    opacity: 0;  
+    visibility: hidden;
+    transition: all 0.2s linear;
+    z-index: 10;
+    /* margin-top: 20px; */
+    transform: translate3d(0, var(--fake-spacing), 0);
+}  
+
+.dropdown-item {
+    font-style: 14px;
+    font-weight: 400;
+    padding: 8px 10px;
+    /* border-radius: 8px; */
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color: #f3f5f9;
+}
+
+/* .dropdown:hover {
+    .dropdown-list {
+        opacity: 1;
+        visibility: visible;
+    }
+} */
+
+.dropdown:hover .dropdown-list {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-list:before {
+    content: "";
+    height: var(--fake-spacing);
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    /* margin-top: -20px; */
+    transform: translate3d(0, -100%, 0);
+    /* background-color: red; */
+}
+
+.dropdown-item:first-child {
+    border-top-left-radius: calc(var(--radius) - 1px);
+    border-top-right-radius: calc(var(--radius) - 1px);
+}
+
+.dropdown-item:last-child {
+    border-bottom-left-radius: calc(var(--radius) - 1px);
+    border-bottom-right-radius: calc(var(--radius) - 1px);
+}
+
+.transform-boxed {
+    border-radius: 12px;
+    background-color: #6A5AF9;
+    height: 100px;
+    width: 100px;
+    transform: translateX(25px) translateY(50px);
+    transform: translateX(100%);
+    transform: translate(100%, 0);
+    transform: translateZ(50px);
+    transform: translate3d(100%, 100%, 0);
+}
+
+.translate-wrapper {
+    width: 100%;
+    height: 500px;
+    background-color: #6A5AF9;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+}
+
+.translate-child {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+
+.scale-boxed {
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    background-color: #f62682;
+    margin: 0 auto;
+}
+
+.card {
+    width: 400px;
+    height: 250px;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+}
+
+.card:hover .card-img {
+    transform: scale(1.5);
+}
+
+.card-img {
+    /* width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px; */
+    transition: transform 0.2s ease-in;
+}
+
+.rotate-boxed {
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    background-color: #2cccff;
+    margin: 0 auto;
+    transform: scale3d(1.1, 1.2, 1);
+}
+
+.table {
+    margin-top: 50px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    white-space: nowrap;
+}
+
+table th,
+table td {
+    text-align: left;
+    vertical-align: middle;
+}
+
+table th {
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #a6a7b2;
+    padding-bottom: 25px;
+}
+
+table .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+table .user-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 100rem;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+table td {
+    padding: 25px 0;
+}
+
+table tr {
+    border-bottom: 1px solid #e4e4e4;
+}
+
+table .follow {
+    height: 26px;
+    color: white;
+    background-color: #FF754C;
+    border-radius: 4px;
+    font-size: 14px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px
+}
+
+table .status {
+    height: 26px;
+    color: #ffa2c0;
+    background-color: #FFF6F9;
+    border-radius: 4px;
+    font-size: 14px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px
+}
+
+table thead tr,
+table tbody tr:last-child {
+    border-bottom: 1px solid #e4e4e4;
+}
+
+@media screen and (max-width: 1023.98px) {
+    .table th,
+    .table td {
+        padding-inline: 25px;
+    }
+}
