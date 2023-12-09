@@ -1,3 +1,3 @@
 pug index.pug --pretty --watch
 
-sass ./styles/app.scss ./styles/app.css --watch
+sass ./sass/app.scss ./styles/app.css --watch
