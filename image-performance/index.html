@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image scrset attribute</title>
+    <!-- 
+        bài toán 1:
+        trên figma đo đc :
+        1 Mobile: 50px x 50px image size 100px x 100px
+        2 Tablet: 100px x 100px image size 200px x 200px
+        3 Desktop: 200px x 200px image size 400px x 400px
+     -->
+
+     <!-- 
+        bài toán 2
+        Desktop: 200px x 200px image size 400px x 400px
+      -->
+
+      <!-- 
+        bài toán 3 2 anh khác nhau
+        Desktop: /img/anh1.jpg
+        Mobile: /img/anh2.jpg
+       -->
+       <style>
+        .imgage {
+            width: 100%;
+        }
+       </style>
+</head>
+<body>
+    <!-- 1. Resolution switching: different sizes -->
+    <!-- <img 
+        srcset="
+            ./avatar-100x100.jpg 100w,
+            ./avatar-200x200.jpg 200w,
+            ./avatar-400x400.jpg 400w
+        "
+        sizes="(max-width: 575px) 100px, (max-width: 991px) 200px, 400px"
+        src="./avatar-400x400.jpg" 
+        alt="image" 
+    /> -->
+
+    <!-- 2. Resolution switching: Same size, different resolutions -->
+    <!-- <img 
+        srcset="
+            ./avatar-200x200.jpg 1x,
+            ./avatar-400x400.jpg 2x
+        "
+        src="./avatar-400x400.jpg" 
+        alt="image" 
+    /> -->
+
+    <!-- 3. Art direction: different images -->
+    <picture>
+        <source media="(max-width: 575px)" 
+        srcset="./img-small.jpg">
+        <img src="./img-large.jpg" alt="image" class="imgage">
+    </picture>
+</body>
+</html>
